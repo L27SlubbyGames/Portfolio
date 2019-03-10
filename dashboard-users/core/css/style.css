@@ -1,0 +1,670 @@
+/* every php pages */
+html {
+    background: url("../../core/img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-color: #010b15;
+    color: #cccccc;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*{
+    transition: all 0.5s ease-in;
+}
+
+background-fog {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: -1;
+}
+
+#fog_1 {
+    position: fixed;
+    margin-top: 320px;
+    margin-left: 70%;
+    animation-name: fog;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fog;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#fog_2 {
+    position: fixed;
+    margin-top: 768px;
+    margin-left: 1001px;
+    animation-name: fog;
+    animation-duration: 14s;
+    animation-delay: -10s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fog;
+    -webkit-animation-duration: 14s;
+    -webkit-animation-delay: -10s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#fog_3 {
+    position: fixed;
+    margin-top: 612px;
+    margin-left: 262px;
+    animation-name: fog;
+    animation-duration: 12s;
+    animation-delay: -7s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fog;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-delay: -7s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#fog_4 {
+    position: fixed;
+    margin-top: 205px;
+    margin-left: 1000px;
+    animation-name: fog;
+    animation-duration: 22s;
+    animation-delay: -12s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fog;
+    -webkit-animation-duration: 22s;
+    -webkit-animation-delay: -12s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes fog {
+    0% {
+        left: 0px;
+    }
+
+    45% {
+        left: 200px;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    95% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes fog {
+    0% {
+        left: 0px;
+    }
+
+    45% {
+        left: 200px;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    95% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* navbar.php */
+.menu {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+
+.menu-cirkel {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    transition: all 400ms ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-cirkel .menu-streep,
+.menu-cirkel .menu-streep:before,
+.menu-cirkel .menu-streep:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 35px;
+    cursor: pointer;
+    background-color: #f04d5c;
+    display: block;
+    content: '';
+    transition: all 500ms ease-in-out;
+}
+
+.menu-cirkel .menu-streep {
+    transform: translate3d(-50%, -4px, 0);
+    -webkit-transform: translate3d(-50%, -4px, 0);
+}
+
+.menu-cirkel .menu-streep:before {
+    transform: translate3d(-50%, -14px, 0);
+    -webkit-transform: translate3d(-50%, -14px, 0);
+}
+
+.menu-cirkel .menu-streep:after {
+    transform: translate3d(-50%, 10px, 0);
+    -webkit-transform: translate3d(-50%, 10px, 0);
+}
+
+#drawer {
+    position: fixed;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 98;
+    height: 100%;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    width: 250px;
+}
+
+#background {
+    background-color: #000000;
+    opacity: 0.4;
+    position: fixed;
+    right: 0;
+    z-index: 97;
+    height: 100%;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    width: 250px;
+}
+
+.menu-cirkel {
+    right: 0px;
+}
+
+.menu:checked~.menu-cirkel .menu-streep {
+    background-color: transparent;
+}
+
+.menu:checked~.menu-cirkel .menu-streep:before {
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+}
+
+.menu:checked~.menu-cirkel .menu-streep:after {
+    transform: translateX(-50%) translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateX(-50%) translateY(-10px) rotate(-45deg);
+    top: 12px;
+}
+
+#drawer {
+    z-index: 98;
+    transition-duration: 500ms;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+#background {
+    z-index: 97;
+    transition-duration: 500ms;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.menu:checked~#drawer {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.menu:checked~#background {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.nav {
+    margin-top: 50px;
+    margin-left: -40px;
+    width: 100%;
+}
+
+.nav li {
+    list-style: none;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.nav li a {
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 13.5px 0px;
+}
+
+.nav li i {
+    position: absolute;
+    margin-left: 6px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav li a:hover,
+.nav li a:hover i,
+.nav-bottom li a:hover i {
+    color: #f04d5c;
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* dashboard.php */
+.portfolio {
+    position: absolute;
+    width: 65%;
+    margin-left: 7%;
+    margin-top: 4%;
+    letter-spacing: 6px;
+    font-weight: bolder;
+}
+
+.portfolio #portfolio {
+    margin-top: -1%;
+    float: right;
+    font-size: 70px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    color: #f04d5c;
+}
+
+.portfolio #name {
+    margin-bottom: 0;
+    font-size: 110px;
+    text-align: start;
+}
+
+.portfolio #line_1 {
+    border-bottom: 3px solid #f04d5c;
+    margin-top: 100px;
+    width: 150px;
+}
+
+.portfolio #line_2 {
+    border-bottom: 3px solid #f04d5c;
+    margin-top: 15px;
+    margin-left: 90px;
+    width: 150px;
+}
+
+.portfolio #functies {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.portfolio i {
+    font-size: 40px;
+    color: #cccccc
+}
+
+.portfolio i:hover {
+    color: #f04d5c;
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* about-me.php */
+.info {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 700px;
+}
+
+.info #picture {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #f04d5c;
+    border-radius: 50%;
+    background-image: url("../../core/img/me.jpg");
+}
+
+.info #about_me {
+    margin: 0;
+    margin-left: 34%;
+    margin-top: -69px;
+    font-size: 60px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+}
+
+.info #line_3 {
+    border-bottom: 3px solid #f04d5c;
+    margin-top: -3px;
+    margin-left: 125px;
+    width: 450px;
+}
+
+.info .text-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 10px 0 0;
+    margin-top: -16px;
+}
+
+.info .text-box #info {
+    text-align: start;
+    padding: 10px;
+}
+
+.info .text-box #skill {
+    text-align: start;
+    font-weight: bolder;
+    padding: 10px;
+    border-bottom: 5px solid #f04d5c;
+}
+
+.info .text-box .project #titel {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.info .text-box .project #link {
+    color: #f04d5c;
+    float: right;
+    padding-right: 10px;
+}
+
+.info .text-box .project #subtitel {
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.info .text-box .project #text{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 5px solid #f04d5c;
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* my-work.php */
+.projects_center {
+    width: 70%;
+    margin: auto;
+}
+
+.projects_center #titel {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.projects_center .projects_center_works {
+    text-align: center;
+    margin: auto;
+    display: table;
+}
+
+.projects_center .projects_center_works .work {
+    margin: 50px 25px 0 25px;
+    width: 350px;
+    display: inline-table;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0;
+}
+
+.projects_center .projects_center_works .work:hover {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0;
+}
+
+.projects_center .projects_center_works .work img {
+    width: 350px;
+    border: 3px solid #f04d5c;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.projects_center .projects_center_works .work #subtitel {
+    position: absolute;
+    width: 350px;
+    margin-top: -45px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    color: #cccccc;
+}
+
+.projects_center .projects_center_works .work a {
+    display: block;
+    background: #f04d5c;
+}
+
+.projects_center .projects_center_works .work a:hover {
+    letter-spacing: 2px;
+}
+
+.projects_center .projects_center_works .work #link {
+    margin: -23.2px 0 -20px 0;
+    font-size: 20px;
+    color: #cccccc;
+}
+
+.projects_center .projects_center_works .work #text {
+    padding: 10px
+}
+
+.projects_center .projects_center_works .work #text i {
+    margin-right: 6px;
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* contact.php */
+.contact_form_center {
+    width: 70%;
+    margin: auto;
+}
+
+.contact_form_center .contact_form_center_table {
+    width: 100%;
+}
+
+.contact_form_center .contact_form_center_table thead th p {
+    margin-bottom: 0px;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.contact_form_center .contact_form_center_table tr td p {
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+
+.contact_form_center .contact_form_center_table tr td input[type='text'],
+.contact_form_center .contact_form_center_table tr td input[type='email'],
+.contact_form_center .contact_form_center_table tr td textarea {
+    width: 98%;
+    border: 3px solid #f04d5c;
+    padding: 10px;
+    color: #cccccc;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact_form_center .contact_form_center_table tr td textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+.contact_form_center .contact_form_center_table tr td input[type='submit'] {
+    padding: 10px;
+    width: 150px;
+    border: 3px solid #f04d5c;
+    color: #cccccc;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.contact_form_center .contact_form_center_table tr td input[type='text']:hover,
+.contact_form_center .contact_form_center_table tr td input[type='text']:focus,
+.contact_form_center .contact_form_center_table tr td input[type='email']:hover,
+.contact_form_center .contact_form_center_table tr td input[type='email']:focus,
+.contact_form_center .contact_form_center_table tr td input[type='submit']:hover,
+.contact_form_center .contact_form_center_table tr td input[type='submit']:focus,
+.contact_form_center .contact_form_center_table tr td textarea:hover,
+.contact_form_center .contact_form_center_table tr td textarea:focus {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact_form_center .contact_form_center_table tr td input[type='submit']:hover {
+    letter-spacing: 2px;
+}
+
+#error {
+    text-align: center;
+    color: #ff0000;
+    margin: 0;
+}
+
+.contact_button_center {
+    width: 70%;
+    margin: auto;
+}
+
+.contact_button_center #titel {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.contact_button_center .contact_button_center_tabs {
+    text-align: center;
+    margin: auto;
+    display: table;
+}
+
+.contact_button_center .contact_button_center_tabs .tab {
+    width: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-table;
+    margin: 25px;
+    border: 3px solid #f04d5c;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact_button_center .contact_button_center_tabs .tab p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact_button_center .contact_button_center_tabs .tab:hover {
+    letter-spacing: 4px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    border: 3px solid #f04d5c;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.cards .cards_content {
+    height: 100px;
+}
+
+.cards .cards_content p {
+    margin: 0;
+    padding: 10%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.cards .cards_content i {
+    float: right;
+    cursor: pointer;
+    margin: 5px 7px;
+    font-size: 40px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards .cards_content i:hover {
+    color: #f04d5c;
+}
+/* --------------------------------------------------------------------------------------------------- */

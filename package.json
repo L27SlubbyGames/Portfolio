@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dashboard-users/src/scss/ -o dashboard-users/dashboard/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L27SlubbyGames/Portfolio.git"
+  },
+  "author": "pascal huberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L27SlubbyGames/Portfolio/issues"
+  },
+  "homepage": "https://github.com/L27SlubbyGames/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

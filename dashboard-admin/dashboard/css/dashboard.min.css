@@ -1,0 +1,21 @@
+table{
+    width: 100%;
+}
+
+.table{
+    display: table;
+}
+
+.inline-table{
+    display: inline-table;
+}
+
+.inline-table select,
+.inline-table input[type='submit']{
+    margin-bottom: 5px;
+}
+
+.bottom{
+    margin-bottom: 50px;
+    visibility: hidden;
+}
