@@ -318,7 +318,6 @@ body {
       -webkit-touch-callout: none; }
       body main#index_page .background_fog #fog {
         position: absolute;
-        width: 33%;
         min-width: 633.6px;
         animation-name: fog;
         animation-timing-function: linear;
@@ -391,7 +390,6 @@ body {
       -webkit-touch-callout: none; }
       body main#about_me_page .background_fog #fog {
         position: absolute;
-        width: 33%;
         min-width: 633.6px;
         animation-name: fog;
         animation-timing-function: linear;
