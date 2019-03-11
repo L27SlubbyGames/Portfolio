@@ -41,6 +41,8 @@ h6 {
     font-size: 9px; }
   p {
     font-size: 9px; }
+  .background_fog {
+    display: none !important; }
   body#overflow {
     overflow-y: hidden; }
   body header {
