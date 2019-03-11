@@ -14,7 +14,7 @@
             $project = $project_db->fetchAll();
         ?>
     </head>
-    <body id="overflow">
+    <body>
         <header>
             <nav>
                 <?php require("../core/nav-bar.php") ?>
