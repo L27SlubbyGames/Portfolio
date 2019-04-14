@@ -1,6 +1,6 @@
 $primary-color: #f04d5c;
 $secondary-color: #cccccc;
-$tetaire-color: #010b15;
+$tetaire-color: #000a14;
 
 @mixin hover{
   transition: all 0.5s ease-in;
@@ -32,7 +32,7 @@ $tetaire-color: #010b15;
 
 //open nav_bar
 @mixin nav_bar_open_1{
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_open_1;
   animation-timing-function: linear;
@@ -55,7 +55,7 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_line_open_1{
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_line_open_1;
   animation-timing-function: linear;
@@ -75,7 +75,7 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_open_2{
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_open_2;
   animation-timing-function: linear;
@@ -98,7 +98,7 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_line_open_2{
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_line_open_2;
   animation-timing-function: linear;
@@ -121,7 +121,7 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_list_item_show{
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_list_item_show;
   animation-timing-function: linear;
@@ -146,8 +146,8 @@ $tetaire-color: #010b15;
 
 //close nav_bar
 @mixin nav_bar_close_1{
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_close_1;
   animation-timing-function: linear;
@@ -170,8 +170,8 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_line_close_1{
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_line_close_1;
   animation-timing-function: linear;
@@ -191,8 +191,8 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_close_2{
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_close_2;
   animation-timing-function: linear;
@@ -215,8 +215,8 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_line_close_2{
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_line_close_2;
   animation-timing-function: linear;
@@ -239,7 +239,7 @@ $tetaire-color: #010b15;
 }
 
 @mixin nav_bar_list_item_hidden{
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: nav_bar_list_item_hidden;
   animation-timing-function: linear;

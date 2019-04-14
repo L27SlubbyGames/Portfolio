@@ -102,7 +102,7 @@ body {
   background-size: cover;
   color: #cccccc;
   background-repeat: no-repeat;
-  background-color: #010b15;
+  background-color: #000a14;
   font-family: Arial, Helvetica, sans-serif; }
   body#overflow {
     overflow-y: hidden; }
@@ -135,7 +135,7 @@ body {
           pointer-events: none;
           cursor: default; }
       body header nav #nav_bar #nav_bar_open_1 {
-        animation-duration: 2s;
+        animation-duration: 0.5s;
         animation-fill-mode: forwards;
         animation-name: nav_bar_open_1;
         animation-timing-function: linear; }
@@ -151,7 +151,7 @@ body {
     margin-top: 10px;
     margin-right: 405px; } }
         body header nav #nav_bar #nav_bar_open_1 #nav_bar_line_open_1 {
-          animation-duration: 2s;
+          animation-duration: 0.5s;
           animation-fill-mode: forwards;
           animation-name: nav_bar_line_open_1;
           animation-timing-function: linear; }
@@ -164,8 +164,8 @@ body {
   100% {
     width: 405px; } }
       body header nav #nav_bar #nav_bar_close_1 {
-        animation-duration: 2s;
-        animation-delay: 1s;
+        animation-duration: 0.5s;
+        animation-delay: 0.25s;
         animation-fill-mode: forwards;
         animation-name: nav_bar_close_1;
         animation-timing-function: linear;
@@ -183,8 +183,8 @@ body {
     margin-top: 10px;
     margin-right: 0px; } }
         body header nav #nav_bar #nav_bar_close_1 #nav_bar_line_close_1 {
-          animation-duration: 2s;
-          animation-delay: 1s;
+          animation-duration: 0.5s;
+          animation-delay: 0.25s;
           animation-fill-mode: forwards;
           animation-name: nav_bar_line_close_1;
           animation-timing-function: linear;
@@ -198,7 +198,7 @@ body {
   100% {
     width: 0px; } }
       body header nav #nav_bar #nav_bar_open_2 {
-        animation-duration: 2s;
+        animation-duration: 0.5s;
         animation-fill-mode: forwards;
         animation-name: nav_bar_open_2;
         animation-timing-function: linear; }
@@ -214,7 +214,7 @@ body {
     margin-top: 43px;
     margin-left: 405px; } }
         body header nav #nav_bar #nav_bar_open_2 #nav_bar_line_open_2 {
-          animation-duration: 2s;
+          animation-duration: 0.5s;
           animation-fill-mode: forwards;
           animation-name: nav_bar_line_open_2;
           animation-timing-function: linear; }
@@ -230,8 +230,8 @@ body {
     width: 405px;
     margin-left: -405px; } }
       body header nav #nav_bar #nav_bar_close_2 {
-        animation-duration: 2s;
-        animation-delay: 1s;
+        animation-duration: 0.5s;
+        animation-delay: 0.25s;
         animation-fill-mode: forwards;
         animation-name: nav_bar_close_2;
         animation-timing-function: linear;
@@ -249,8 +249,8 @@ body {
     margin-top: 0px;
     margin-left: 0px; } }
         body header nav #nav_bar #nav_bar_close_2 #nav_bar_line_close_2 {
-          animation-duration: 2s;
-          animation-delay: 1s;
+          animation-duration: 0.5s;
+          animation-delay: 0.25s;
           animation-fill-mode: forwards;
           animation-name: nav_bar_line_close_2;
           animation-timing-function: linear;
@@ -282,7 +282,7 @@ body {
               color: #f04d5c;
               transition: all 0.5s ease-in; }
         body header nav #nav_bar #nav_bar_list_items #nav_bar_list_item_show {
-          animation-duration: 3s;
+          animation-duration: 1s;
           animation-fill-mode: forwards;
           animation-name: nav_bar_list_item_show;
           animation-timing-function: linear; }
@@ -297,7 +297,7 @@ body {
   100% {
     opacity: 1; } }
         body header nav #nav_bar #nav_bar_list_items #nav_bar_list_item_hidden {
-          animation-duration: 3s;
+          animation-duration: 1s;
           animation-fill-mode: forwards;
           animation-name: nav_bar_list_item_hidden;
           animation-timing-function: linear; }

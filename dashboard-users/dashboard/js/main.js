@@ -12,7 +12,7 @@ window.onload = function() {
     }
     
     function hidden() {
-        setTimeout(function(){nav_bar_list_item.style.display = 'none';},1000);
+        setTimeout(function(){nav_bar_list_item.style.display = 'none';},250);
     }
 
     function toggle_nav_bar_open() {
