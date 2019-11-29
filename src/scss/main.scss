@@ -1,0 +1,68 @@
+@import "config";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.background_fog {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.fog {
+  @include fog;
+  &:nth-child(1) {
+    margin-left: 1344px;
+    margin-top: 220px;
+    animation-duration: 20s;
+  }
+  &:nth-child(2) {
+    margin-top: 668px;
+    margin-left: 1001px;
+    animation-delay: -10s;
+    animation-duration: 14s;
+  }
+  &:nth-child(3) {
+    margin-top: 512px;
+    margin-left: 262px;
+    animation-delay: -7s;
+    animation-duration: 12s;
+  }
+}
+      
+main {
+  margin-top: 100px;
+}
+
+.primary {
+  color: theme-color("primary");
+}
+
+.line {
+  border: 2px solid;
+}
+
+.social_media_link {
+  font-size: 40px;
+  margin-right: 1rem;
+  color: theme-color("secondary");
+}
+
+a {
+  color: theme-color("secondary");
+}
+
+i, a {
+  @include no_hover;
+  &:hover {
+    @include hover;
+    color: theme-color("primary");
+  }
+}

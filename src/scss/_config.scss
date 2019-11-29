@@ -1,0 +1,40 @@
+$secondary: #cccccc;
+$tetaire: #000a14;
+
+$theme-colors: (
+  "primary": #f04d5c,
+  "secondary": $secondary,
+  "tetaire": $tetaire,
+) !default;
+
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$body-color: $secondary;
+$body-bg: $tetaire;
+
+@mixin hover{
+  transition: all 0.5s ease-in;
+}
+
+@mixin no_hover{
+  transition: all 0.5s ease-out;
+}
+
+@mixin fog{
+  min-width: 633.6px;
+  animation-name: fog;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes fog {
+    0% {
+      left: 0px;
+    }
+
+    50% {
+      left: 200px;
+    }
+
+    100% {
+      left: 0px;
+    }
+  }
+}

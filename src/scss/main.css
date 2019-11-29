@@ -1,0 +1,66 @@
+body {
+  background: url("../img/background.png");
+  overflow-x: hidden;
+  background-size: cover;
+  color: #cccccc;
+  background-repeat: no-repeat;
+  background-color: #000a14;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background_fog {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.fog {
+  min-width: 633.6px;
+  animation-name: fog;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fog {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.fog:nth-child(1) {
+  margin-left: 1344px;
+  margin-top: 220px;
+  animation-duration: 20s;
+}
+.fog:nth-child(2) {
+  margin-top: 668px;
+  margin-left: 1001px;
+  animation-delay: -10s;
+  animation-duration: 14s;
+}
+.fog:nth-child(3) {
+  margin-top: 512px;
+  margin-left: 262px;
+  animation-delay: -7s;
+  animation-duration: 12s;
+}
+
+.social_media_link {
+  font-size: 40px;
+  color: #cccccc;
+}
+.social_media_link i {
+  transition: all 0.5s ease-out;
+}
+.social_media_link i:hover {
+  transition: all 0.5s ease-in;
+  color: #f04d5c;
+}
+
+/*# sourceMappingURL=main.css.map */
